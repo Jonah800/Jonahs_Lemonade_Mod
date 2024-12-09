@@ -1,6 +1,7 @@
 package net.Jonah.lemonade;
 
 import com.mojang.logging.LogUtils;
+import net.Jonah.lemonade.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -78,6 +79,8 @@ public class lemonadeMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -103,6 +106,9 @@ public class lemonadeMod
     {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
             event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.LEMONADE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
