@@ -88,6 +88,9 @@ public class lemonademod
             event.accept(ModItems.LEMONADE);
             event.accept(ModItems.CITRINE);
         }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CITRINE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

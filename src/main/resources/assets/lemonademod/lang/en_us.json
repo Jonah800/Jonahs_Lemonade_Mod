@@ -1,4 +1,6 @@
 {
   "item.lemonademod.lemonade": "Lemonade",
-  "item.lemonademod.citrine": "Citrine Crystal"
+  "item.lemonademod.citrine": "Citrine Crystal",
+
+  "block.lemonademod.citrine_block": "Block of Citrine"
 }
