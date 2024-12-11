@@ -90,6 +90,7 @@ public class lemonademod
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.CITRINE_BLOCK);
+            event.accept(ModBlocks.CITRINE_ORE);
         }
     }
 

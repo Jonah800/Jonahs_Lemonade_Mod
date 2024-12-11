@@ -23,6 +23,11 @@ public class ModBlocks {
         return new Block(BlockBehaviour.Properties.of()
                 .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST));
     });
+
+    public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = Blocks.register(name, block);
         registerBlockItem(name, toReturn);
