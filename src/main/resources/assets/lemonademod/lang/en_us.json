@@ -3,5 +3,7 @@
   "item.lemonademod.citrine": "Citrine Crystal",
 
   "block.lemonademod.citrine_block": "Block of Citrine",
-  "block.lemonademod.citrine_ore": "Citrine Ore"
+  "block.lemonademod.citrine_ore": "Citrine Ore",
+
+  "creativetab.lemonademod.lemonade_mod_tab": "Lemonade Mod Tab"
 }

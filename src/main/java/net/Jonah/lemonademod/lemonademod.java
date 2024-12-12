@@ -2,6 +2,7 @@ package net.Jonah.lemonademod;
 
 import com.mojang.logging.LogUtils;
 import net.Jonah.lemonademod.Block.ModBlocks;
+import net.Jonah.lemonademod.item.ModCreativeModeTab;
 import net.Jonah.lemonademod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -58,6 +59,8 @@ public class lemonademod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTab.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
